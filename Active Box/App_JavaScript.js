@@ -24,7 +24,7 @@
                 }
                 break;
             case 'email':
-                var pattern_email = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+                var pattern_email = /^[A-Za-zА-Яа-яЁё0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
                 if (val != '' & pattern_email.test(val)) {
                     $(this).addClass('not_error');
                     $(this).next('.error_message').text('Принято')
@@ -121,7 +121,7 @@
                 }
                 break;
             case 'email2':
-                var pattern_email2 = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+                var pattern_email2 = /^[A-Za-zА-Яа-яЁё0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
                 if (val != '' & pattern_email2.test(val)) {
                     $(this).addClass('not_error');
                     $(this).next('.error_box').text('Принято')
