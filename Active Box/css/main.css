@@ -224,11 +224,12 @@ textarea {
 }
 .btn_question {
     width:200px;
-    font-weight:bolder;
-    font-size:18px
+    font-size:18px;
+    background-color:#9f0000;
+    color:#ffffff;
 }
 .btn_question:hover{
-    background-color:rgb(128, 128, 128);
+    background-color:#ff0000;
     color:white;
 }
 .btn_pos{
