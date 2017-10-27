@@ -119,7 +119,7 @@
     //Carousel
     $('#quote .carousel').carousel({
         pause: "hover",
-        interval: 3000
+        interval: 5000
     });
     $('#carousel_1').carousel({
         interval: 4000
