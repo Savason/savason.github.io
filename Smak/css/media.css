@@ -138,6 +138,13 @@
     .doble_down {
         display: none;
     }
+    .tabs_ul {
+        padding: 0px;
+    }
+
+    #tabs li a {
+        padding: 0px;
+    }
 
     /* Custom, iPhone Retina */
     @media only screen and (max-width : 320px) {
