@@ -1,0 +1,196 @@
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+        
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .no_slaider {
+        display: none;
+    }
+    
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+    nav {
+        height:60px;
+        line-height:60px;
+        position:fixed;
+        background-color:#2a2e48;
+    }
+    .no_slaider {
+        display: none;
+    }
+    .logo {
+        padding-top:15px
+    }
+    #top_menu {
+        background-color:#2a2e48;
+    }
+    .menu li {
+        display:block;
+        text-align:center;
+    }
+    .menu li a {
+        display:block;
+    }
+    .menu li a:hover {
+        background-color:#ffffff;
+    }
+    .main_title {
+       padding-top:90px
+    }
+    .btn_menu {
+        visibility:visible;
+    }
+    .btn_menu span {
+        top:0px
+    }
+    .line {
+        display:none;
+    }
+    .btn_menu {
+        margin: 0px;
+        padding: 0px 10px;
+        border:none;
+    }
+    .first_block {
+        padding-bottom: 50px;
+    }
+    #res_modal {
+        width: 100%;
+        margin: 0px auto;
+    }
+   
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    nav {
+        height: 60px;
+        line-height: 60px;
+        position: fixed;
+    }
+
+    .no_slaider {
+        display: none;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .logo {
+        padding-top: 15px
+    }
+
+    .btn_menu span {
+        top: 0px
+    }
+
+    .first_block {
+        padding-bottom: 50px;
+    }
+
+    .callreg_btn {
+        position: fixed;
+        right: 45px;
+        top: 9px;
+        background-color: #2a2e48;
+        color: #ffffff;
+        border: none;
+        width: 40px;
+        height: 40px;
+        z-index: 999;
+    }
+
+    /* Custom, iPhone Retina */
+    @media only screen and (max-width : 320px) {
+        nav {
+            height: 60px;
+            line-height: 60px;
+            position: fixed;
+        }
+
+        .line {
+            display: none;
+        }
+
+        .logo {
+            padding-top: 15px
+        }
+
+        .btn_menu span {
+            top: 0px;
+        }
+
+        .first_block {
+            padding-bottom: 50px;
+        }
+
+        .callreg_btn {
+            position: fixed;
+            right: 45px;
+            top: 9px;
+            background-color: #2a2e48;
+            color: #ffffff;
+            border: none;
+            width: 40px;
+            height: 40px;
+            z-index: 999;
+        }
+    }
+
+
+    /* Custom, iPhone Retina */
+    @media only screen and (min-width : 320px) {
+    }
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (min-width : 480px) {
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+        .btn_menu {
+            visibility: collapse;
+        }
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+        .btn_menu {
+            visibility: collapse;
+        }
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+        .btn_menu {
+            visibility: collapse;
+        }
+    }
+}

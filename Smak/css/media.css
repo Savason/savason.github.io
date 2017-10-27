@@ -1,0 +1,169 @@
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    .team_background {
+        width: auto;
+    }
+
+    .team_background img {
+        margin: 0px auto;
+    }
+
+    .triangle-1:after, triangle-1:before {
+        left: 13%;
+    }
+
+    .triangle-2:after, triangle-2:before {
+        left: 38%;
+    }
+
+    .triangle-3:after, triangle-3:before {
+        left: 62%;
+    }
+
+    .triangle-4:after, triangle-4:before {
+        left: 87%;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .we_are, .circle_service {
+        margin-top: 15px;
+    }
+
+    .we_are p {
+        padding-bottom: 10px;
+    }
+
+    .same:after, .same:before {
+        border: none;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+    /*Disable Animation on Mobile Devices*/
+    .animated {
+        /*CSS transitions*/
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+        /*CSS transforms*/
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+        /*CSS animations*/
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+    }
+
+    nav {
+        position: fixed;
+        height: 100px;
+        line-height: 60px;
+    }
+
+    .menu li {
+        display: block;
+        text-align: center;
+        background-image: none;
+    }
+
+    .menu li a {
+        display: block;
+    }
+
+    #top_menu {
+        background-color: #000000;
+    }
+
+    .btn_menu {
+        top: 15px;
+    }
+
+    .title p {
+        padding: 0;
+    }
+
+    .btn_menu i {
+        color: #ffffff;
+        font-size: 25px;
+    }
+
+    .doble_down {
+        display: none;
+    }
+
+    .we_are, .circle_service {
+        margin-top: 0;
+    }
+
+    .we_are p {
+        padding-bottom: 10px;
+    }
+
+    .we_are span {
+        font-family: 'Oswald-Bold-webfont', sans-serif;
+         color: #000000;
+    }
+
+    .team_background {
+        width: auto;
+    }
+
+    .team_background img {
+        margin: 0px auto;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    nav {
+        position: fixed;
+    }
+    .tabs_ul li {
+        margin-top: 10px;
+        display: block;
+        background-image: none;
+    }
+    .doble_down {
+        display: none;
+    }
+
+    /* Custom, iPhone Retina */
+    @media only screen and (max-width : 320px) {
+    .backround_row {
+        padding-top: 250px;
+    }
+}
+}
+
+
+    /* Custom, iPhone Retina */
+    @media only screen and (min-width : 320px) {
+    }
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (min-width : 480px) {
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+    }
