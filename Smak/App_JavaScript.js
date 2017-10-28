@@ -112,6 +112,8 @@
     //Our works navigation
     $('.btn_video').click(function () {
         $('video').get(0).play()
+    });    $('.tabs_ul li').click(function () {
+        $('video').get(0).pause();
     });    $('.feedback,.btn_contact_us').on("click", function (e) {
         var top = $('#send_message').offset().top;
         $('body,html').animate({ scrollTop: top }, 1000);
