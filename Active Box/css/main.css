@@ -271,6 +271,9 @@ textarea {
 .copyright {
     font-size: 14px;
 }
+.copyright i{
+    color:#e84545;
+}
 /*MODAL FORM*/
 #res_modal {
    width:70%;
