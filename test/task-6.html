@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>task-6</title>
+</head>
+<body>
+    <script>
+        window.addEventListener("load", function () {
+            var result = document.getElementById("result");
+            var number = prompt('Введите любое целое число что-бы получить его простые множители');
+            function getAllFactors(element) {
+                var factors = [], i;
+                for (i = 2; i <= element; i++) {
+                    while ((element % i) === 0) {
+                        factors.push(i);
+                        element /= i;
+                    }
+                }
+                return factors;
+            }
+            result.innerHTML = "Простые множители числа " + number + " = " + getAllFactors(number).join(', ');
+        })
+    </script>
+    <div id="result"></div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: #f7f7f7;
+            border: 2px dashed #808080;
+            overflow: hidden;
+            padding: 0 30px 0 30px;
+        }
+
+        header {
+            color: #808080;
+            font-size: 20px;
+            font-weight: bold;
+            width: 100%;
+            height: 50px;
+            background-color: #ffffff;
+            border: 2px solid #808080;
+            margin: 10px 0 20px 0;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+
+        .blocks {
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .blocks div {
+            background-color: #dbedf9;
+            width: 49%;
+            margin-top: 10px;
+            border: 2px solid #808080;
+            box-sizing: border-box;
+            text-align: center;
+            color: #000000;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .block_1 {
+            height: 95px;
+            float: left;
+        }
+
+        .block_2 {
+            height: 60px;
+            float: right;
+        }
+
+        .block_3 {
+            float: right;
+            height: 95px;
+        }
+
+        .block_4 {
+            float: left;
+            height: 120px;
+        }
+
+        .block_5 {
+            float: right;
+            height: 85px;
+        }
+
+        .block_6 {
+            float: left;
+            height: 95px;
+        }
+
+        .block_7 {
+            float: right;
+            height: 60px;
+        }
+
+        footer {
+            color: #808080;
+            font-size: 20px;
+            font-weight: bold;
+            width: 100%;
+            height: 80px;
+            background-color: #ffffff;
+            border: 2px solid #808080;
+            text-align: center;
+            margin: 20px 0 10px 0;
+        }
+
+        @media screen and (max-width: 640px) {
+            .blocks div {
+                clear: both;
+                float: left;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p>header</p>
+        </header>
+        <div class="blocks">
+            <div class="block_1">
+                <p>block 1</p>
+            </div>
+            <div class="block_2">
+                <p>block 2</p>
+            </div>
+            <div class="block_3">
+                <p>block 3</p>
+            </div>
+            <div class="block_4">
+                <p>block 4</p>
+            </div>
+            <div class="block_5">
+                <p>block 5</p>
+            </div>
+            <div class="block_6">
+                <p>block 6</p>
+            </div>
+            <div class="block_7">
+                <p>block 7</p>
+            </div>
+        </div>
+        <footer>
+            <p>footer</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>task-5</title>
+</head>
+<body>
+    <script>
+        var arr = [1, 2, [3, 4, [5, 6], 7], 8, [9, 10]];
+        function arrSum(arr) {
+            var sum = 0;
+            for (var i = 0; i < arr.length; i++) {
+                if (typeof arr[i] == 'object') {
+                    sum += arrSum(arr[i]);
+                }
+                else {
+                    sum += arr[i];
+                }
+            }
+            return sum;
+        }
+        alert("Исходный масcив: " + arr + "\n\Сумма всех елементов массива = " + arrSum(arr));
+    </script>
+
+</body>
+</html>
