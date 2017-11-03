@@ -3,9 +3,6 @@
     font-size: 16px;
     min-width: 320px;
 }
-a{
-    outline:none;
-}
 /*BACK TO UP*/
 #back_to_up{
     position:fixed;
@@ -67,6 +64,7 @@ nav {
     text-decoration:none;
     font-family:'Oswald-Bold-webfont';
     color:#ffffff;
+    outline:none;
 }
 .menu li a:hover, .menu li a:focus{
     color:#ffe600;
