@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>ShopNo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link href="img/logo_sm.png" rel="icon" type="image/x-icon" />
+     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <link href="less/main.less" rel="stylesheet/less" type="text/css" />
+    <link href="less/fonts.less" rel="stylesheet/less" type="text/css" />
+    <link href="less/media.less" rel="stylesheet/less" type="text/css" />
+    <script src="libs/less/less-v.2.7.2.js"></script>
+   
+</head>
+<body>
+    <!--HEADER-->
+    <header>
+        <div class="container">
+            <nav ng-app="sidenavMaterial">
+                <a href="ShopNo.html">
+                    <img src="img/logo_shopno.png" title="logo" alt="logo" />
+                </a>
+                <div ng-controller="AppCtrl" style="height: auto;" ng-cloak class="nav_menu">
+                    <div ng-click="toggleRight()" ng-hide="isOpenRight()" class="btn_menu">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
+                    <md-sidenav class="md-sidenav-right menu_fixed" md-component-id="right">
+      <md-content ng-controller="RightCtrl" layout-padding>
+        <md-button ng-click="close()" class="md-primary">
+          Close Sidenav Right
+        </md-button>
+          <ul class="collapse_menu">
+<li><a href="#">HOME</a></li>
+<li><a href="#">ABOUT US</a></li>
+<li><a href="#">WORKS</a></li>
+<li><a href="#">OUR SERVICES</a></li>
+<li><a href="#">THE TEAM</a></li>
+<li><a href="#">LOCATION</a></li>
+</ul>
+      </md-content>
+    </md-sidenav>
+                </div>
+            </nav>
+            <div class="title_block">
+                <h1>Say hello to <span>shopno!</span><br />
+                    <span>Agency</span> corporate shopno theme</h1>
+                <input type="submit" value="Contact us" class="btn_contact" />
+            </div>
+        </div>
+    </header>
+    <!-- OUR WORKS -->
+    <section class="our_works">
+        <div class="container">
+            <div class="portfolio">
+                <div class="work_img">
+                    <div class="about_work"></div>
+                    <img src="img/works-1.jpg" />
+                </div>
+                <div class="work_img">
+                    <img src="img/works-2.jpg" />
+                </div>
+                <div class="work_img">
+                    <img src="img/works-3.jpg" />
+                </div>
+                <div class="work_img">
+                    <img src="img/works-4.jpg" />
+                </div>
+                <div class="work_img">
+                    <img src="img/works-5.jpg" />
+                </div>
+                <div class="work_img">
+                    <img src="img/works-6.jpg" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script>
+        angular.module('sidenavMaterial', ['ngMaterial'])
+            .controller('AppCtrl', function ($scope, $mdSidenav, $log) {
+                $scope.toggleRight = buildToggler('right');
+                $scope.isOpenRight = function () {
+                    return $mdSidenav('right').isOpen();
+                };
+                function buildToggler(navID) {
+                    return function () {
+                        $mdSidenav(navID)
+                            .toggle()
+                            .then(function () {
+                                $log.debug("toggle " + navID + " is done");
+                            });
+                    };
+                }
+            })
+            .controller('RightCtrl', function ($scope, $timeout, $mdSidenav, $log) {
+                $scope.close = function () {
+                    $mdSidenav('right').close()
+                        .then(function () {
+                            $log.debug("close RIGHT is done");
+                        });
+                };
+            });
+    </script>
+</body>
+</html>
