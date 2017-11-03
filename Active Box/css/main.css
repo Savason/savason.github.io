@@ -106,7 +106,8 @@ btn_menu {
     font-size: 70px;
     color: #9f0000;
 }
-.block:hover>i{
+.block:hover>i,
+.block:focus>i{
     color:#ff0000;
 }
 .block h3 {
