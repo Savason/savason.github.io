@@ -31,6 +31,7 @@ nav {
     color: #ffffff;
     text-transform: uppercase;
     font-family: "RalewayBold", sans-serif;
+    outline:none;
 }
 .menu li a:hover, 
 .menu li a:focus {
