@@ -1,4 +1,6 @@
 ﻿@M_bold: 'Montserrat-Bold',sans-serif;
+@M_regular: 'MontserratRegular',sans-serif;
+@grey: #777879;
 body {
     margin: 0;
     padding: 0;
@@ -67,7 +69,7 @@ nav {
 
     .collapse_menu {
         text-align:center;
-        margin:50% 0;
+        margin:40% 0;
         li{
             padding-bottom:20px;
         a {
@@ -106,7 +108,26 @@ nav {
     .btn_contact {
         width: 225px;
         height: 55px;
-        
+        border: 2px solid @grey;
+        color: @grey;
+        background: #cbccce;
+        font-weight: bold;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        font-family: @M_regular;
+        font-size: 18px;
+        text-transform: uppercase;
+        -moz-transition: 0.2s;
+        -o-transition: 0.2s;
+        -webkit-transition: 0.2s;
+        transition: 0.2s;
+
+        &:hover {
+            color: #75d6e0;
+            border: 2px solid #75d6e0;
+            background: #ffffff;
+        }
     }
 }
 /*OUR WORKS*/
