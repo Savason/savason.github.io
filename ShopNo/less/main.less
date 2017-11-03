@@ -1,4 +1,4 @@
-﻿@M_bold:'Montserrat-Bold';
+﻿@M_bold: 'Montserrat-Bold',sans-serif;
 body {
     margin: 0;
     padding: 0;
@@ -25,8 +25,8 @@ header {
     }
 }
 nav {
-    display:flex;
-    justify-content:space-between;
+    display: flex;
+    justify-content: space-between;
 
     .nav_menu {
 
@@ -36,10 +36,20 @@ nav {
 
         .menu_fixed {
             position: fixed;
+
+            .close_tab {
+                float: right;
+                cursor: pointer;
+                font-size: 28px;
+
+                &:hover {
+                    color: #75d6e0;
+                }
+            }
         }
 
         .btn_menu {
-            margin:55px 15px 0 0;
+            margin: 55px 15px 0 0;
             cursor: pointer;
             outline: none;
 
@@ -55,8 +65,22 @@ nav {
         color: #75d6e0;
     }
 
-    .collapse_menu{
+    .collapse_menu {
         text-align:center;
+        margin:50% 0;
+        li{
+            padding-bottom:20px;
+        a {
+            text-decoration: none;
+            color: #000000;
+            font-family: @M_bold;
+            font-size:22px;
+            &:hover,
+            &:focus {
+                color: #75d6e0;
+            }
+        }
+        }
     }
 }
 .title_block {
@@ -69,7 +93,7 @@ nav {
         width: 100%;
         text-transform: uppercase;
         text-align: center;
-        font-family: @M_bold, sans-serif;
+        font-family: @M_bold;
         font-size: 45px;
         text-shadow: 5px 5px 3px #cbccce;
 
