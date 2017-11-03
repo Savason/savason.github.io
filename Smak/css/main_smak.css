@@ -3,6 +3,9 @@
     font-size: 16px;
     min-width: 320px;
 }
+a{
+    outline:none;
+}
 /*BACK TO UP*/
 #back_to_up{
     position:fixed;
