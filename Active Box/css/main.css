@@ -167,12 +167,12 @@ btn_menu {
      font-size:14px;
 }
 .btn_soc {
-     width:30px;
-     height:30px;
-     background-color:transparent;
-     border:1px solid #c4c1c1;
-     color:#a09f9f;
-     transition:width 0.5s, height 0.5s;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #c4c1c1;
+    color: #a09f9f;
+    transition: width 0.5s, height 0.5s;
 }
 .btn_soc:hover{
      border:2px solid #3b5998 ;

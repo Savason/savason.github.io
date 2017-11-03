@@ -100,7 +100,9 @@ nav {
 .doble_down i{
     font-size:35px;
     color:#ffffff;
-    padding:16px 0px 0px 19px;
+    display:flex;
+    justify-content:center;
+    padding-top:25%;
 }
 .doble_down {
     width: 60px;
@@ -146,14 +148,21 @@ nav {
     margin-top:60px;
 }
 .block_services div {
+    display:flex;
+    justify-content:center;
+    align-items:center;
     width: 100px;
     height: 100px;
     background-color: #ffe600;
     border-radius: 50%;
 }
-.block_services div:hover{
-    border:1px solid #000000;
-    background-color:#ffffff;
+.block_services div:hover {
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
 }
 .block_services div:hover>i{
     color:#ffe600;
@@ -161,13 +170,6 @@ nav {
 .block_services i{
     font-size:40px;
     color:#ffffff;
-    padding:32px 0px 0px 30px
-}
-.block_services .left_pos{
-    padding-left:28px;
-}
-.block_services .right_pos{
-    padding-left:32px;
 }
 .block_services h4 {
     font-family: 'Oswald-Bold-webfont', sans-serif;
@@ -255,6 +257,7 @@ nav {
     font-size: 16px;
     color:#000000;
     padding-right:20px;
+    outline:none;
 }
 #tabs li a:hover,
 #tabs li a:focus{
