@@ -199,6 +199,7 @@
         var id = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({ scrollTop: top }, 1000);
+        $('.display_in').removeClass('in');
     });
     $('#back-top').click(function () {
         $('body,html').animate({ scrollTop: 0 }, 500);
