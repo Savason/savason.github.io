@@ -37,25 +37,36 @@
         }
     }
     nav {
+        position:fixed;
+        background-color:#808080;
+        width:100%;
+        z-index:999;
+        top:0;
         .nav_menu {
             .btn_menu {
                 margin-top:15px;
             }
         }
     }
-    .portfolio {
-        .work_img {
-            margin: 0;
 
-            img {
-                max-width: 300px;
+        .portfolio {
+            .work_img {
+                margin: 5px;
+
+                img {
+                    max-width: 300px;
+                }
             }
         }
     }
-}
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+    .title_block {
+        h1 {
+            margin-top: 100px;
+        }
+    }
     
 
 /* Custom, iPhone Retina */
