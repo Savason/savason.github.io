@@ -176,8 +176,8 @@ nav {
 
     .about_us_container {
         display: flex;
-        -ms-flex-wrap: wrap;
-        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: nowrap;
+        -webkit-flex-wrap: nowrap;
         flex-wrap: nowrap;
         justify-content: space-between;
 
@@ -224,6 +224,8 @@ nav {
 }
 .portfolio {
     display: flex;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     justify-content: center;
 
@@ -245,24 +247,38 @@ nav {
             top: 0;
             left: 0;
             opacity: 0;
+            -moz-transition: 0.2s;
+            -o-transition: 0.2s;
+            -webkit-transition: 0.2s;
+            transition: 0.2s;
 
             &:hover {
-                opacity: 0.8;
+                opacity: 0.9;
             }
 
             .inform {
                 color: #ffffff;
                 text-align: center;
                 margin: auto;
-                .soc_work{
-                    color:rgba(239,240,242,1);
-                    font-size:25px;
-                    padding-right:10px;
-                    &:hover{
-                        color:#000000;
+
+                .soc_work {
+                    color: rgba(239,240,242,1);
+                    font-size: 25px;
+                    margin-right: 10px;
+
+                    &:hover {
+                        color: #000000;
                     }
                 }
             }
         }
     }
+}
+/*OUR SERVICES*/
+.services_block {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content:space-between;
 }
