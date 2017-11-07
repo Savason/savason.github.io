@@ -1,6 +1,18 @@
 ﻿
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
+    .wrap-portfolio {
+        display: flex;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .wrap-team {
+        display: flex;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -55,12 +67,33 @@
             -webkit-flex-wrap: wrap;
             flex-wrap: wrap;
             justify-content: center;
+            .information_about{
+                text-align:center;
+            }
         }
     }
     .portfolio {
-        .work_img {
-            margin: 5px;
+        .wrap-portfolio {
+            display: flex;
+            -ms-flex-wrap: nowrap;
+            -webkit-flex-wrap: nowrap;
+            flex-wrap: nowrap;
         }
+
+        .work_img {
+            margin: auto;
+        }
+    }
+    .about_service{
+        p{
+            display:none;
+        }
+    }
+    .wrap-team {
+        display: flex;
+        -ms-flex-wrap: nowrap;
+        -webkit-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     }
     }
 
@@ -71,13 +104,29 @@
             margin-top: 130px;
         }
     }
-    .services_block {
-        .wrap {
+    .portfolio {
+        .wrap-portfolio {
             -ms-flex-wrap: wrap;
             -webkit-flex-wrap: wrap;
             flex-wrap: wrap;
         }
         }
+
+        .services_block {
+            .wrap {
+                -ms-flex-wrap: wrap;
+                -webkit-flex-wrap: wrap;
+                flex-wrap: wrap;
+            }
+        }
+    .wrap-team {
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        .img_team{
+            margin:auto;
+        }
+    }
     }
         /* Custom, iPhone Retina */
         @media only screen and (max-width : 320px) {
