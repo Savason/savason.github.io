@@ -11,6 +11,7 @@
     margin-bottom: 0;
     text-align: center;
     text-transform:uppercase;
+    padding-top:120px;
 }
 .litle_title {
     font-family: @Merr_Regular;
@@ -19,6 +20,7 @@
     text-transform: uppercase;
     text-align: center;
     margin: 0;
+    padding-bottom:120px;
 }
 
 body {
@@ -169,10 +171,10 @@ nav {
 /*ABOUT US*/
 #about_us {
     background-color: rgba(203, 204, 206, 0.30);
+    padding-bottom:120px;
 }
 .title_about_us {
     overflow: hidden;
-    padding-top: 120px;
 
     .about_us_container {
         display: flex;
@@ -182,24 +184,23 @@ nav {
         justify-content: space-between;
 
         .carusel_about, .information_about {
-            margin: 120px 0 150px 0;
             width: 555px;
         }
 
         .carusel_about {
             display: flex;
             justify-content: center;
+            position: relative;
 
-            img {
-                max-width: 100%;
-                max-height: 100%;
-                z-index: 99;
-                -webkit-box-shadow: 0px 0px 40px 0px rgba(239,240,242,1);
-                -moz-box-shadow: 0px 0px 40px 0px rgba(239,240,242,1);
-                box-shadow: 0px 0px 40px 0px rgba(239,240,242,1);
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                    -webkit-box-shadow: 0px 0px 40px 0px rgba(239,240,242,1);
+                    -moz-box-shadow: 0px 0px 40px 0px rgba(239,240,242,1);
+                    box-shadow: 0px 0px 40px 0px rgba(239,240,242,1);
+                }
             }
         }
-
         .information_about {
             padding-right: 15px;
 
@@ -217,11 +218,7 @@ nav {
             }
         }
     }
-}
 /*OUR WORKS*/
-.title_works {
-    padding:120px 0 120px 0;
-}
 .portfolio {
     display: flex;
     -ms-flex-wrap: wrap;
@@ -282,9 +279,7 @@ nav {
 /*OUR SERVICES*/
 #our_services {
     background-color: rgba(203, 204, 206, 0.30);
-}
-.title_services{
-    padding:120px 0 120px 0;
+    padding-bottom:120px;
 }
 .services_block {
     padding: 0 15px 15px 15px;
@@ -297,7 +292,7 @@ nav {
         justify-content: space-around;
 
         .service {
-
+            border: 1px solid #ffffff;
             margin-bottom: 7px;
             position: relative;
 
@@ -315,23 +310,27 @@ nav {
                     color: #ffffff;
                     text-align: center;
                     margin: auto;
-                    h5{
-                        font-family:@Merr_Bold;
-                        font-size:20px;
-                        text-transform:uppercase;
+
+                    h5 {
+                        font-family: @Merr_Bold;
+                        font-size: 20px;
+                        text-transform: uppercase;
                     }
-                    p{
-                        font-family:@Rel_Regular;
-                        font-size:16px;
+
+                    p {
+                        font-family: @Rel_Regular;
+                        font-size: 16px;
                     }
-                    a{
-                        font-family:@Rel_Regular;
-                        font-size:18px;
-                        display:flex;
-                        justify-content:center;
-                        i{
-                            padding-left:10px;
-                            font-size:25px;
+
+                    a {
+                        font-family: @Rel_Regular;
+                        font-size: 18px;
+                        display: flex;
+                        justify-content: center;
+
+                        i {
+                            padding-left: 10px;
+                            font-size: 25px;
                         }
                     }
                 }
@@ -344,3 +343,20 @@ nav {
         }
     }
 }
+/*TEAM*/
+.the_team {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content:center;
+    .img_team{
+        margin:0 15px 10px 0;
+    img{
+        max-width:100%;
+        max-height:100%;
+    }
+    }
+}
+
+

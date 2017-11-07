@@ -5,7 +5,7 @@
     <title>ShopNo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <link href="img/logo_sm.png" rel="icon" type="image/x-icon" />
-    <script src="jquery-3.2.1.min.js"></script>
+    <script src="libs/jquery/jquery-2.1.4.min.js"></script>
     <link href="less/main.less" rel="stylesheet/less" type="text/css" />
     <link href="less/fonts.less" rel="stylesheet/less" type="text/css" />
     <link href="less/media.less" rel="stylesheet/less" type="text/css" />
@@ -17,6 +17,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="js/App_jquery.js"></script>
 </head>
 <body>
     <!--HEADER-->
@@ -60,8 +61,9 @@
                 <p class="litle_title">Lorem ipsum dolor sit amet event landing template</p>
                 <div class="about_us_container">
                     <div class="carusel_about">
-                        <div class="shadow_carusel"></div>
-                        <img src="img/About-us-1.jpg" />
+                        <div class="slider">
+                            <img src="img/About-us-1.jpg" />
+                        </div>
                     </div>
                     <div class="information_about">
                         <h4>We Actually Do amazing works</h4>
@@ -83,9 +85,9 @@
     <section id="our_works">
         <div class="container">
             <div class="title_works">
-            <h3 class="block_title">featured works</h3>
-            <p class="litle_title">Lorem ipsum dolor sit amet event landing template</p>
-                </div>
+                <h3 class="block_title">featured works</h3>
+                <p class="litle_title">Lorem ipsum dolor sit amet event landing template</p>
+            </div>
             <div class="portfolio">
                 <div class="work_img">
                     <div class="about_work">
@@ -170,71 +172,99 @@
             </div>
             <div class="services_block">
                 <div class="wrap">
-                <div class="service">
-                    <div class="service_information">
-                        <div class="about_service">
-                        <h5></h5>
-                        <p></p>
-                        <a>KNOW MORE</a>
+                    <div class="service">
+                        <div class="service_information">
+                            <div class="about_service">
+                                <h5></h5>
+                                <p></p>
+                                <a>KNOW MORE</a>
                             </div>
+                        </div>
+                        <img class="service_img" src="img/service-1.jpg" />
                     </div>
-                    <img class="service_img" src="img/service-1.jpg" />
-                </div>
-                <div class="service">
-                    <div class="service_information">
-                        <div class="about_service">
-                        <h5>cool psd Design</h5>
-                        <p>Our most popular service is our we know that sometimes it’s something and you middle most...</p>
-                        <a>KNOW MORE<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                    <div class="service">
+                        <div class="service_information">
+                            <div class="about_service">
+                                <h5>cool psd Design</h5>
+                                <p>Our most popular service is our we know that sometimes it’s something and you middle most...</p>
+                                <a>KNOW MORE<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                             </div>
+                        </div>
+                        <img class="service_img" src="img/service-2.jpg" />
                     </div>
-                    <img class="service_img" src="img/service-2.jpg" />
                 </div>
-                    </div>
                 <div class="wrap">
-                <div class="service">
-                    <div class="service_information">
-                        <div class="about_service">
-                        <h5>Designing is The Cool</h5>
-                        <p>Our most popular service is our Virtual Receptionist. We know that ...</p>
-                        <a>KNOW MORE<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                    <div class="service">
+                        <div class="service_information">
+                            <div class="about_service">
+                                <h5>Designing is The Cool</h5>
+                                <p>Our most popular service is our Virtual Receptionist. We know that ...</p>
+                                <a>KNOW MORE<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                             </div>
+                        </div>
+                        <img class="service_img" src="img/service-3.jpg" />
                     </div>
-                    <img class="service_img" src="img/service-3.jpg" />
-                </div>
-                <div class="service">
-                     <div class="service_information">
-                        <div class="about_service">
-                        <h5>PSD TO HTML KORI</h5>
-                        <p>We know that sometimes it’s something and you middle most...</p>
-                        <a>KNOW MORE<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                    <div class="service">
+                        <div class="service_information">
+                            <div class="about_service">
+                                <h5>PSD TO HTML KORI</h5>
+                                <p>We know that sometimes it’s something and you middle most...</p>
+                                <a>KNOW MORE<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                             </div>
+                        </div>
+                        <img class="service_img" src="img/service-4.jpg" />
                     </div>
-                    <img class="service_img" src="img/service-4.jpg" />
                 </div>
-                    </div>
                 <div class="wrap">
-                <div class="service">
-                    <div class="service_information">
-                        <div class="about_service">
-                        <h5>cool psd Design</h5>
-                        <p>Our most popular service is our new virtual Receptionist you middle most...</p>
-                        <a>KNOW MORE<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                    <div class="service">
+                        <div class="service_information">
+                            <div class="about_service">
+                                <h5>cool psd Design</h5>
+                                <p>Our most popular service is our new virtual Receptionist you middle most...</p>
+                                <a>KNOW MORE<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                             </div>
+                        </div>
+                        <img class="service_img" src="img/service-5.jpg" />
                     </div>
-                    <img class="service_img" src="img/service-5.jpg" />
-                </div>
-                <div class="service">
-                    <div class="service_information">
-                        <div class="about_service">
-                        <h5>Designing is The Cool FOR</h5>
-                        <p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most...</p>
-                        <a>KNOW MORE<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                    <div class="service">
+                        <div class="service_information">
+                            <div class="about_service">
+                                <h5>Designing is The Cool FOR</h5>
+                                <p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most...</p>
+                                <a>KNOW MORE<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                             </div>
+                        </div>
+                        <img class="service_img" src="img/service-6.jpg" />
                     </div>
-                    <img class="service_img" src="img/service-6.jpg" />
                 </div>
-                    </div>
+            </div>
+        </div>
+    </section>
+    <section id="team">
+        <div class="container">
+            <div class="title_team">
+                <h3 class="block_title">Small team</h3>
+                <p class="litle_title">Lorem ipsum dolor sit amet event landing template</p>
+            </div>
+            <div class="the_team">
+                <div class="img_team">
+                    <img src="img/team-1.jpg" />
+                </div>
+                <div class="img_team">
+                    <img src="img/team-2.jpg" />
+                </div>
+                <div class="img_team">
+                    <img src="img/team-3.jpg" />
+                </div>
+                <div class="img_team">
+                    <img src="img/team-4.jpg" />
+                </div>
+                <div class="img_team">
+                    <img src="img/team-5.jpg" />
+                </div>
+                <div class="img_team">
+                    <img src="img/team-6.jpg" />
+                </div>
             </div>
         </div>
     </section>
