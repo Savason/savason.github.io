@@ -10,9 +10,10 @@
     font-size: 38px;
     margin-bottom: 0;
     text-align: center;
-    text-transform:uppercase;
-    padding-top:120px;
+    text-transform: uppercase;
+    padding-top: 120px;
 }
+
 .litle_title {
     font-family: @Merr_Regular;
     font-size: 18px;
@@ -20,7 +21,7 @@
     text-transform: uppercase;
     text-align: center;
     margin: 0;
-    padding-bottom:120px;
+    padding-bottom: 120px;
 }
 
 body {
@@ -60,7 +61,7 @@ nav {
 
         .md-opaque {
             opacity: 0;
-            position:fixed;
+            position: fixed;
         }
 
         .menu_fixed {
@@ -171,8 +172,9 @@ nav {
 /*ABOUT US*/
 #about_us {
     background-color: rgba(203, 204, 206, 0.30);
-    padding-bottom:120px;
+    padding-bottom: 120px;
 }
+
 .title_about_us {
     overflow: hidden;
 
@@ -192,32 +194,33 @@ nav {
             justify-content: center;
             position: relative;
 
-                img {
-                    max-width: 100%;
-                    max-height: 100%;
-                    -webkit-box-shadow: 0px 0px 40px 0px rgba(239,240,242,1);
-                    -moz-box-shadow: 0px 0px 40px 0px rgba(239,240,242,1);
-                    box-shadow: 0px 0px 40px 0px rgba(239,240,242,1);
-                }
-            }
-        }
-        .information_about {
-            padding-right: 15px;
-
-            h4 {
-                font-family: @Merr_Bold;
-                font-size: 20px;
-                text-transform: uppercase;
-                color: #646565;
-            }
-
-            p {
-                font-family: @Rel_Regular;
-                font-size: 16px;
-                color: #929393;
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                -webkit-box-shadow: 0px 0px 40px 0px rgba(239,240,242,1);
+                -moz-box-shadow: 0px 0px 40px 0px rgba(239,240,242,1);
+                box-shadow: 0px 0px 40px 0px rgba(239,240,242,1);
             }
         }
     }
+
+    .information_about {
+        padding-right: 15px;
+
+        h4 {
+            font-family: @Merr_Bold;
+            font-size: 20px;
+            text-transform: uppercase;
+            color: #646565;
+        }
+
+        p {
+            font-family: @Rel_Regular;
+            font-size: 16px;
+            color: #929393;
+        }
+    }
+}
 /*OUR WORKS*/
 .portfolio {
     display: flex;
@@ -278,14 +281,16 @@ nav {
         }
     }
 }
-#our_works{
-    margin-bottom:120px;
+
+#our_works {
+    margin-bottom: 120px;
 }
 /*OUR SERVICES*/
 #our_services {
     background-color: rgba(203, 204, 206, 0.30);
-    padding-bottom:120px;
+    padding-bottom: 120px;
 }
+
 .services_block {
     padding: 0 15px 15px 15px;
 
@@ -354,14 +359,28 @@ nav {
     -ms-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
-    justify-content:center;
-    .img_team{
-        margin:0 7.5px 10px 7.5px;
-    img{
-        max-width:100%;
-        max-height:100%;
-    }
+    justify-content: center;
+
+    .img_team {
+        margin: 0 7.5px 10px 7.5px;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
     }
 }
+/*CONTACT US*/
+#contact_us {
+    background-image: url('../img/baner-contact.jpg');
+    background-size: cover;
 
-
+    .contact_form {
+        max-width: 560px;
+        .feedback_form{
+            input, textarea{
+                width:100%;
+            }
+        }
+    }
+}
