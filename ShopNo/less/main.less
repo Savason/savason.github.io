@@ -375,11 +375,78 @@ nav {
     background-image: url('../img/baner-contact.jpg');
     background-size: cover;
 
-    .contact_form {
-        max-width: 560px;
-        .feedback_form{
-            input, textarea{
-                width:100%;
+    .contact_box {
+        padding: 120px 0 120px 0;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+
+
+        .contact_form, .contact_map {
+            background-color: rgba(0, 0, 0, 0.70);
+            padding: 30px 20px 30px 20px;
+            max-width: 520px;
+            margin: 0 15px 10px 0;
+
+            .feedback_form {
+
+                input, textarea {
+                    width: 100%;
+                    color: #ffffff;
+                    background: none;
+                    padding: 10px 0 10px 0;
+                    margin: 0 0 20px 0;
+                    border: none;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.70);
+                    resize: none;
+                }
+
+                .btn_contact {
+                    height: 55px;
+                    width: 245px;
+                    font-family: @Mont_regular;
+                    font-size: 18px;
+                    background-color: #6eeee4;
+                    border: none;
+                    -moz-border-radius: 3px;
+                    -webkit-border-radius: 3px;
+                    border-radius: 3px;
+                    color: #2e6b66;
+                    -moz-transition: 0.2s;
+                    -o-transition: 0.2s;
+                    -webkit-transition: 0.2s;
+                    transition: 0.2s;
+
+                    &:hover {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+
+        .contact_map {
+            padding: 30px 20px 10px 20px;
+            max-width: 520px;
+
+            .contact_inform {
+                color: rgba(255, 255, 255, 0.70);
+                font-family: @Rel_Regular;
+                font-size: 15px;
+            }
+
+            .internet-adress {
+                color: rgba(255, 255, 255, 0.70);
+                font-family: @Rel_Regular;
+                font-size: 15px;
+            }
+
+            .google_map {
+                iframe{
+                    max-width:100%;
+                }
             }
         }
     }
