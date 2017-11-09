@@ -312,7 +312,7 @@ nav {
                 position: absolute;
                 top: 0;
                 left: 0;
-                opacity: 0.8;
+                opacity: 0.9;
 
                 .about_service {
                     color: #ffffff;
@@ -335,12 +335,25 @@ nav {
                         font-size: 18px;
                         display: flex;
                         justify-content: center;
+                        text-decoration: none;
+                        color: #ffffff;
 
                         i {
                             padding-left: 10px;
                             font-size: 25px;
                         }
                     }
+                }
+
+                .more_inform {
+                    background-color: #70f5eb;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: 1;
                 }
             }
         }
@@ -444,6 +457,65 @@ nav {
             .google_map {
                 iframe{
                     max-width:100%;
+                }
+            }
+        }
+    }
+}
+/*FOOTER*/
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #262b2e;
+
+    .footer_inform {
+        text-align: center;
+
+        h4 {
+            font-family: @Rel_Regular;
+            font-size: 16px;
+            color: #dfe0e0;
+            padding-top: 50px;
+        }
+
+        .soc_btn {
+            a {
+                display: inline-block;
+                color: #bbb8b9;
+                width: 45px;
+                height: 42px;
+                background-color: #424648;
+                text-decoration: none;
+                margin-left: 5px;
+
+                &:hover {
+                    background-color: #6eeee4;
+                    color: #000000;
+                }
+
+                i {
+                    font-size: 25px;
+                    display: flex;
+                    align-items: baseline;
+                    justify-content: center;
+                    padding-top: 9px;
+                }
+            }
+        }
+
+        p {
+            color: #dfe0e0;
+            font-family: @Rel_Regular;
+            font-size: 16px;
+            padding: 30px 0 30px 0;
+            margin: 0;
+
+            span {
+                padding-left: 5px;
+
+                i {
+                    font-size: 20px;
+                    color: #6eeee4;
                 }
             }
         }

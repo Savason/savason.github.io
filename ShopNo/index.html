@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <link href="img/logo_sm.png" rel="icon" type="image/x-icon" />
     <script src="libs/jquery/jquery-2.1.4.min.js"></script>
+    <script src="libs/angularJS/angular.js"></script>
     <link href="less/main.less" rel="stylesheet/less" type="text/css" />
     <link href="less/fonts.less" rel="stylesheet/less" type="text/css" />
     <link href="less/media.less" rel="stylesheet/less" type="text/css" />
@@ -19,11 +20,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="js/App_jquery.js"></script>
 </head>
-<body>
+<body ng-app="sidenavMaterial">
     <!--HEADER-->
     <header>
         <div class="container">
-            <nav ng-app="sidenavMaterial">
+            <nav>
                 <a href="index.html">
                     <img src="img/logo_shopno.png" title="logo" alt="logo" />
                 </a>
@@ -90,87 +91,88 @@
             </div>
             <div class="portfolio">
                 <div class="wrap-portfolio">
-                <div class="work_img">
-                    <div class="about_work">
-                        <div class="inform">
-                            <h4>WORK NAME</h4>
-                            <p>About this work</p>
-                            <a class="soc_work" href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-                            <a class="soc_work" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                            <a class="soc_work" href="#"><i class="fa fa-cloud-download" aria-hidden="true"></i></a>
+                    <div class="work_img">
+                        <div class="about_work">
+                            <div class="inform">
+                                <h4>WORK NAME</h4>
+                                <p>About this work</p>
+                                <a class="soc_work" href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                <a class="soc_work" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                <a class="soc_work" href="#"><i class="fa fa-cloud-download" aria-hidden="true"></i></a>
+                            </div>
                         </div>
+                        <img src="img/works-1.jpg" />
                     </div>
-                    <img src="img/works-1.jpg" />
-                </div>
-                <div class="work_img">
-                    <div class="about_work">
-                        <div class="inform">
-                            <h4>WORK NAME</h4>
-                            <p>About this work</p>
-                            <a class="soc_work" href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-                            <a class="soc_work" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                            <a class="soc_work" href="#"><i class="fa fa-cloud-download" aria-hidden="true"></i></a>
+                    <div class="work_img">
+                        <div class="about_work">
+                            <div class="inform">
+                                <h4>WORK NAME</h4>
+                                <p>About this work</p>
+                                <a class="soc_work" href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                <a class="soc_work" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                <a class="soc_work" href="#"><i class="fa fa-cloud-download" aria-hidden="true"></i></a>
+                            </div>
                         </div>
+                        <img src="img/works-2.jpg" />
                     </div>
-                    <img src="img/works-2.jpg" />
                 </div>
-                    </div>
                 <div class="wrap-portfolio">
-                <div class="work_img">
-                    <div class="about_work">
-                        <div class="inform">
-                            <h4>WORK NAME</h4>
-                            <p>About this work</p>
-                            <a class="soc_work" href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-                            <a class="soc_work" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                            <a class="soc_work" href="#"><i class="fa fa-cloud-download" aria-hidden="true"></i></a>
+                    <div class="work_img">
+                        <div class="about_work">
+                            <div class="inform">
+                                <h4>WORK NAME</h4>
+                                <p>About this work</p>
+                                <a class="soc_work" href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                <a class="soc_work" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                <a class="soc_work" href="#"><i class="fa fa-cloud-download" aria-hidden="true"></i></a>
+                            </div>
                         </div>
+                        <img src="img/works-3.jpg" />
                     </div>
-                    <img src="img/works-3.jpg" />
-                </div>
-                <div class="work_img">
-                    <div class="about_work">
-                        <div class="inform">
-                            <h4>WORK NAME</h4>
-                            <p>About this work</p>
-                            <a class="soc_work" href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-                            <a class="soc_work" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                            <a class="soc_work" href="#"><i class="fa fa-cloud-download" aria-hidden="true"></i></a>
+                    <div class="work_img">
+                        <div class="about_work">
+                            <div class="inform">
+                                <h4>WORK NAME</h4>
+                                <p>About this work</p>
+                                <a class="soc_work" href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                <a class="soc_work" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                <a class="soc_work" href="#"><i class="fa fa-cloud-download" aria-hidden="true"></i></a>
+                            </div>
                         </div>
+                        <img src="img/works-4.jpg" />
                     </div>
-                    <img src="img/works-4.jpg" />
                 </div>
-                    </div>
                 <div class="wrap-portfolio">
-                <div class="work_img">
-                    <div class="about_work">
-                        <div class="inform">
-                            <h4>WORK NAME</h4>
-                            <p>About this work</p>
-                            <a class="soc_work" href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-                            <a class="soc_work" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                            <a class="soc_work" href="#"><i class="fa fa-cloud-download" aria-hidden="true"></i></a>
+                    <div class="work_img">
+                        <div class="about_work">
+                            <div class="inform">
+                                <h4>WORK NAME</h4>
+                                <p>About this work</p>
+                                <a class="soc_work" href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                <a class="soc_work" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                <a class="soc_work" href="#"><i class="fa fa-cloud-download" aria-hidden="true"></i></a>
+                            </div>
                         </div>
+                        <img src="img/works-5.jpg" />
                     </div>
-                    <img src="img/works-5.jpg" />
-                </div>
-                <div class="work_img">
-                    <div class="about_work">
-                        <div class="inform">
-                            <h4>WORK NAME</h4>
-                            <p>About this work</p>
-                            <a class="soc_work" href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-                            <a class="soc_work" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                            <a class="soc_work" href="#"><i class="fa fa-cloud-download" aria-hidden="true"></i></a>
+                    <div class="work_img">
+                        <div class="about_work">
+                            <div class="inform">
+                                <h4>WORK NAME</h4>
+                                <p>About this work</p>
+                                <a class="soc_work" href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                <a class="soc_work" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                <a class="soc_work" href="#"><i class="fa fa-cloud-download" aria-hidden="true"></i></a>
+                            </div>
                         </div>
+                        <img src="img/works-6.jpg" />
                     </div>
-                    <img src="img/works-6.jpg" />
                 </div>
-                  </div>
             </div>
         </div>
     </section>
-    <section id="our_services">
+    <!-- OUR SERVICES -->
+    <section id="our_services" ng-controller="ServiceInformCtrl">
         <div class="container">
             <div class="title_services">
                 <h3 class="block_title">our services</h3>
@@ -183,7 +185,10 @@
                             <div class="about_service">
                                 <h5>Designing is The Cool FOR</h5>
                                 <p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most...</p>
-                                <a>KNOW MORE<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                <a href="" ng-click="IsVisible=true">KNOW MORE<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="more_inform" ng-show = "IsVisible">
+                                <span ng-click="IsVisible=false">X</span>
                             </div>
                         </div>
                         <img class="service_img" src="img/service-1.jpg" />
@@ -254,29 +259,29 @@
             </div>
             <div class="the_team">
                 <div class="wrap-team">
-                <div class="img_team">
-                    <img src="img/team-1.jpg" />
-                </div>
-                <div class="img_team">
-                    <img src="img/team-2.jpg" />
-                </div>
+                    <div class="img_team">
+                        <img src="img/team-1.jpg" />
                     </div>
+                    <div class="img_team">
+                        <img src="img/team-2.jpg" />
+                    </div>
+                </div>
                 <div class="wrap-team">
-                <div class="img_team">
-                    <img src="img/team-3.jpg" />
-                </div>
-                <div class="img_team">
-                    <img src="img/team-4.jpg" />
-                </div>
+                    <div class="img_team">
+                        <img src="img/team-3.jpg" />
                     </div>
+                    <div class="img_team">
+                        <img src="img/team-4.jpg" />
+                    </div>
+                </div>
                 <div class="wrap-team">
-                <div class="img_team">
-                    <img src="img/team-5.jpg" />
-                </div>
-                <div class="img_team">
-                    <img src="img/team-6.jpg" />
-                </div>
+                    <div class="img_team">
+                        <img src="img/team-5.jpg" />
                     </div>
+                    <div class="img_team">
+                        <img src="img/team-6.jpg" />
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -294,7 +299,9 @@
                 </div>
                 <div class="contact_map">
                     <p class="contact_inform">
-                        Adress line 1<br />                         Adress line 2<br />                        Phone: +548 945645<br />
+                        Adress line 1<br />
+                        Adress line 2<br />
+                        Phone: +548 945645<br />
                         Fax: +456456 54546<br />
                     </p>
                     <p class="internet-adress">
@@ -302,12 +309,24 @@
                         E-mail: info@designagency.net
                     </p>
                     <div class="google_map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10150.867102633581!2d30.61077625!3d50.502228800000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1510100523211" width="520" height="280" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10150.867102633581!2d30.61077625!3d50.502228800000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1510100523211" width="520" height="280" frameborder="0" style="border: 0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <footer>
+        <div class="footer_inform">
+            <h4>FOLLOW US</h4>
+            <div class="soc_btn">
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+            <p>Copyright Masum Parvej<span><i class="fa fa-hand-peace-o" aria-hidden="true"></i></span>. All Rights Reserved</p>
+        </div>
+    </footer>
 
 
 
@@ -337,6 +356,9 @@
                             $log.debug("close RIGHT is done");
                         });
                 };
+            })
+            .controller('ServiceInformCtrl', function ($scope) {
+                $scope.IsVisible = '';
             });
     </script>
 </body>
