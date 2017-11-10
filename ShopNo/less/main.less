@@ -59,11 +59,6 @@ nav {
 
     .nav_menu {
 
-        .md-opaque {
-            opacity: 0;
-            position: fixed;
-        }
-
         .menu_fixed {
             position: fixed;
             outline: none;
@@ -365,12 +360,15 @@ nav {
     }
 }
 /*TEAM*/
+#team{
+    background-color:#ffffff;
 .the_team {
     display: flex;
     -ms-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom:100px;
 
     .img_team {
         margin: 0 7.5px 10px 7.5px;
@@ -379,6 +377,88 @@ nav {
             max-width: 100%;
             max-height: 100%;
         }
+    }
+}
+}
+/*QUOTE*/
+#quote {
+    background-color: rgba(203, 204, 206, 0.30);
+
+    .quote_team {
+        display: flex;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 150px;
+        align-items: center;
+        margin:0 15px 0 15px;
+
+        .quote_context {
+            background-color: #ffffff;
+            max-width: 665px;
+            max-height: 365px;
+            text-align: center;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+
+            h4 {
+                padding: 40px 0 0 0;
+                font-family: @Merr_Regular;
+
+                span {
+                    font-style: italic;
+                    font-family: @Rel_Regular;
+                    font-size: 13px;
+                    color: #7f7f7f;
+                }
+            }
+
+            p {
+                padding: 0 85px 30px 85px;
+                font-family: @Rel_Regular;
+                font-size: 16px;
+                color: #7f7f7f;
+            }
+
+            img {
+                padding-bottom: 30px;
+            }
+
+            .prev_qoute, .next_qoute {
+                width: 55px;
+                height: 50px;
+                background-color: #ffffff;
+                -moz-border-radius: 4px;
+                -webkit-border-radius: 4px;
+                border-radius: 4px;
+                color: #7f7f7f;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &:hover {
+                    color: #000000;
+                    background-color: #71f6eb;
+                }
+
+                i {
+                    font-size: 26px;
+                }
+            }
+
+            .prev_qoute {
+                margin-right: 25px;
+            }
+        }
+    }
+
+    .prev_btn {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        top: 70px;
     }
 }
 /*CLIENT*/
@@ -508,6 +588,7 @@ footer {
             font-size: 16px;
             color: #dfe0e0;
             padding-top: 50px;
+            margin-top:0;
         }
 
         .soc_btn {
