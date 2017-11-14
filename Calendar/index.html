@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link href="calendar-png.png" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="calendar_style.css" rel="stylesheet" />
+    <script src="App_JavaScript.js"></script>
+    <title>Calendar</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header_calendar">
+                <div class="btn_click">
+                    <input class="click_add same" type="button" value="Добавить" />
+                    <input class="click_res same" type="button" value="Обновить" />
+                </div>
+                <div class="search_information">
+                    <i class="fa fa-search icon_search" aria-hidden="true"></i>
+                    <input class="search_input" type="search" placeholder="Событие, дата или участик" />
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="calendar_container">
+        <div class="add_event">
+            <i class="fa fa-times close" aria-hidden="true"></i>
+            <form name="form_control" class="add_form">
+                <input class="event_text" type="text" placeholder="Событие" />
+                <input class="data_text" type="text" placeholder="День, месяц, год" />
+                <input class="parnter_name" type="text" placeholder="Имена учасников" />
+                <textarea class="event_discription" placeholder="Описание" rows="6"></textarea>
+            </form>
+            <button class="ready">Готово</button>
+            <button class="reset">Удалить</button>
+        </div>
+        <div class="calendar_nav">
+            <button class="prev"><i class="fa fa-caret-left" aria-hidden="true"></i></button>
+            <div class="today"></div>
+            <button class="next"><i class="fa fa-caret-right" aria-hidden="true"></i></button>
+            <div class="only_today">Сегодня</div>
+        </div>
+        <table id="calendar">
+            <thead>
+                <tr>
+                    <td>
+                    Понедельник<td>
+                    Вторник<td>
+                    Среда<td>
+                    Четверг<td>
+                    Пятница<td>
+                    Суббота<td>
+                    Воскресенье
+  <tbody>
+        </table>
+
+    </div>
+</body>
+</html>
