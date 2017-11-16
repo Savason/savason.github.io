@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>GL-TEST</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link href="img/code_icon.png" rel="icon" type="image/x-icon" />
+    <link href="less/main.less" rel="stylesheet/less" type="text/css" />
+    <link href="less/media.less" rel="stylesheet/less" type="text/css" />
+    <script src="libs/less/less-v.2.7.2.js"></script>
+    <script src="libs/jquery/jquery-2.1.4.min.js"></script>
+    <script src="libs/angularJS/angular.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+</head>
+<body>
+    <!-- HEDEAR -->
+    <header class="header">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="home_logo">
+                    <div class="logo" title="logo">
+                        <i class="fa fa-code" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <div class="menu">
+                    <ul class="nav_menu">
+                        <li><a href=".header">HOME</a></li>
+                        <li><a href=".about">ABOUT</a></li>
+                        <li><a href=".skills">SKILLS</a></li>
+                        <li><a href=".contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="title_block">
+                <h1>Name surname</h1>
+                <p>Front-end developer</p>
+            </div>
+        </div>
+    </header>
+    <!-- ABOUT -->
+    <section class="about">
+        <div class="container">
+            <h3 class="title_same">ABOUT</h3>
+            <div class="about_inform">
+                <div class="goals">
+                    <h3 class="title_goals">Goals</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, ac erat dolor quisque magna consectetur leo, 
+                        pede nec phasellus praesent adipiscing. Nullam diam magna at mauris amet, 
+                        non ut urna a commodo. Donec vivamus semper nisi velit, proin id turpis, 
+                        vehicula amet nullam convallis adipiscing ut sit, sit viverra. 
+                        Duis interdum eu eu sodales nec ut, non nibh accumsan eleifend. 
+                        Purus ut vitae sapien dui duis dolores, porttitor tempus nascetur id ut, 
+                        integer ut dignissim harum.
+                    </p>
+                </div>
+                <div class="img_about">
+                    <img src="img/about_us.png" />
+                </div>
+                <div class="dreams">
+                    <h3 class="title_dreams">Dreams</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, ac erat dolor quisque magna consectetur leo, 
+                        pede nec phasellus praesent adipiscing. Nullam diam magna at mauris amet, 
+                        non ut urna a commodo. Donec vivamus semper nisi velit, proin id turpis, 
+                        vehicula amet nullam convallis adipiscing ut sit, sit viverra. 
+                        Duis interdum eu eu sodales nec ut, non nibh accumsan eleifend. 
+                        Purus ut vitae sapien dui duis dolores, porttitor tempus nascetur id ut, 
+                        integer ut dignissim harum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SKILLS -->
+    <section class="skills" ng-app="skillsApp">
+        <div class="container">
+            <h3 class="title_same">SKILLS</h3>
+            <div class="skills_container" ng-controller="skillsCtrl">
+                <div class="skills_name">
+                    <p ng-repeat="skill in data.skills">
+                        {{skill.name}}
+                    </p>
+                </div>
+                <div class="prof_level">
+                    <div class="html_level"></div>
+                    <div class="css_level"></div>
+                    <div class="js_level"></div>
+                    <div class="react_level"></div>
+                    <div class="angular_level"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT -->
+    <section class="contact">
+        <div class="container">
+            <h3 class="title_same">CONTACT</h3>
+            <div class="contact_flex">
+                <div class="contact_container">
+                    <div class="contact_number">
+                        <p class="contzct_name">Phone number:</p>
+                        <p class="grey">+38066-66-66-666</p>
+                    </div>
+                    <div class="contact_email">
+                        <p class="contzct_name">Email:</p>
+                        <p class="grey">mail@gmail.com</p>
+                    </div>
+                    <div class="contact_skype">
+                        <p class="contzct_name">Skype:</p>
+                        <p class="grey">mySkypeAcc</p>
+                    </div>
+                </div>
+                <div class="feedback_container">
+                    <form>
+                        <input class="name_input" type="text" placeholder="Name" required />
+                        <input class="email_input" type="email" placeholder="Email" required />
+                        <textarea class="message_input" rows="4" placeholder="Send a massage" required></textarea>
+                        <div class="btn_center">
+                            <input class="send_mesagge" type="submit" value="Send" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer_container">
+            <div class="footer_inform">
+                <div class="footer_contact">
+                    <p>Mobile:<span>+38066-66-66-666</span></p>
+                    <p>Email:<span>mail@gmail.com</span></p>
+                    <p>Skype:<span>mySkypeAcc</span></p>
+                </div>
+                <a href="index.html" class="footer_logo" title="logo">
+                    <div>
+                        <i class="fa fa-code" aria-hidden="true"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/Task_5.js"></script>
+    <script src="js/Task_4.js"></script>
+    <!-- Navigation -->
+    <script>
+        $('.menu').on("click", 'a', function (e) {
+            e.preventDefault();
+            var id = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({ scrollTop: top }, 1000);
+        });
+    </script>
+
+</body>
+</html>
